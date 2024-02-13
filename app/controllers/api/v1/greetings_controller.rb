@@ -4,7 +4,6 @@ class Api::V1::GreetingsController < ApplicationController
     random_number = rand(@greetings.size)
     @random_greeting = @greetings[random_number]
     render json: @random_greeting
-
   end
 
   def index
