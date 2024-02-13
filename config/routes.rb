@@ -11,4 +11,6 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  root to: "greetings#root"
 end
