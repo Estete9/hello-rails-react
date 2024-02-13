@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'greetings/greeting'
+  get 'static/index'
   get "up" => "rails/health#show", as: :rails_health_check
 
   namespace :api do
@@ -12,5 +12,5 @@ Rails.application.routes.draw do
     end
   end
 
-  root to: "greetings#root"
+  root 'static#index'
 end
