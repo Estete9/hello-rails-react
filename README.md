@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <h1><b>Where's the Money App</b></h1>
+  <h1><b>Hello Rails React</b></h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -8,7 +8,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Where's the Money](#-recipe-app-)
+- [📖 Hello Rails React](#-recipe-app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -28,19 +28,18 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Where's the Money <a name="about-project"></a>
+# 📖 Hello Rails React <a name="about-project"></a>
 
-The **Where's the Money** This is a mobile web application where you can manage your budget: you have a list of activities associated with a category so that you can see how much money you spent and on what.
+The **Hello Rails React** This is a simple app to create a rails-react app with an API endpoint that displays a random greeting.
 
 ## 🛠 Built With <a name="built-with"></a> 
 
 - Ruby v3.2.2
 - Rails v7.1.2
 - Postgresql v14.9
-- Devise
-- CanCanCan
-- Rspec
-- Capybara
+- Webpack
+- React
+- React Router
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -65,24 +64,31 @@ The **Where's the Money** This is a mobile web application where you can manage 
   </ul>
 </details>
 
+<details>
+<summary>Frontend</summary>
+  <ul>
+    <li><a href="https://react.dev">React</a></li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- [User log in and sign up]
-- [Creation of Categories and Activities]
-- [Splash screen and not logged in user logic]
+- [Api endpoint exposure]
+- [Integration for React]
+- [Use of React routes]
 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO  -->
+<!-- LIVE DEMO 
 ## 💻 Live Demo <a name="live-demo"></a>
 
 Check the live demo [here](https://wheres-the-money.onrender.com)
 
-Check the documentation recording [here](https://www.loom.com/share/2452b6b963424aca8b3f9eec7a48f281) 
+Check the documentation recording [here](https://www.loom.com/share/2452b6b963424aca8b3f9eec7a48f281)  -->
 
 <!-- GETTING STARTED -->
 
@@ -121,6 +127,7 @@ Install this project with:
   bundle install
   rails db:setup
   rails db:migrate
+  rails db:seed
 ```
 
 ### Usage
@@ -130,7 +137,7 @@ To run the project, execute the following command:
 ```sh
   rails server
 ```
-Open the following ing in your web browser `http://localhost:3000`
+Open the following in your web browser `http://localhost:3000`
 
 ### Run tests
 
@@ -172,7 +179,7 @@ Example command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Estete9/where-s-the-money/issues).
+Feel free to check the [issues page](https://github.com/Estete9/hello-rails-react/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,15 +187,15 @@ Feel free to check the [issues page](https://github.com/Estete9/where-s-the-mone
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project coomment or send it a star
+If you like this project comment or send it a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella). -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
