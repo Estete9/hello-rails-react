@@ -1,18 +1,20 @@
 // Entry point for the build script in your package.json
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Greeting from './components/Greeting';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import App from './app';
+// import reportWebVitals from './reportWebVitals';
 
-function App() {
-   return (
-     <BrowserRouter>
-       <Routes>
-         <Route path="/" element={<Greeting />} />
-       </Routes>
-     </BrowserRouter>
-   );
-}
+ReactDOM.render(
+<React.StrictMode>
+  <Provider store={store}>
+    <App />
+  </Provider>
+</React.StrictMode>, 
+document.getElementById('root')
+);
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// reportWebVitals();
+
 

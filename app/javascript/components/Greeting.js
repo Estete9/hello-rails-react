@@ -1,31 +1,44 @@
-import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+
+import { fetchRandomGreeting } from '../redux/features/greeting/greetingSlice.js';
 
 function Greeting() {
-  const [greeting, setGreeting] = useState('');
+  const dispatch = useDispatch();
+  const { greeting, isLoading, error } = useSelector((store) => ({
+    greeting: store.greeting.greeting,
+    isLoading: store.greeting.isLoading,
+    error: store.greeting.error,
+  }));
 
   useEffect(() => {
-    async function getData()  {
-    
-      const res = await fetch('/api/v1/greetings/random_greeting.json');
-      const data = await res.json();
-      setGreeting(data.greeting)
+    if (isLoading) {
+      dispatch(fetchRandomGreeting());
     }
-    getData()
-  }, []);
+  }, [isLoading, dispatch]);
 
-  return (
-    <div>
-      <h2>Today's greeting</h2>
-      <strong>
-        <p>{greeting}</p>
-      </strong>
-    </div>
-  );
+  // console.log('in component: greeting', greeting);
+  if (isLoading) {
+    return <div>Fetching greeting...</div>;
+  }
+  if (error) {
+    return <div>{`We encountered an error: ${JSON.stringify(error)}`}</div>;
+  }
+
+  if (!greeting) {
+    <h2>There are no greetings today</h2>;
+  } else {
+    return (
+      <div>
+        <h2>Today's greeting</h2>
+        <strong>
+          <p>{greeting.greeting}</p>
+        </strong>
+      </div>
+    );
+  }
 }
 
 export default Greeting;
-
-
-
 
 
