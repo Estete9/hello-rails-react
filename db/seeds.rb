@@ -1,0 +1,5 @@
+Greeting.create(greeting: 'Buonjour')
+Greeting.create(greeting: 'Buenos dias')
+Greeting.create(greeting: 'Good morning')
+Greeting.create(greeting: 'Guten morgen')
+Greeting.create(greeting: 'Buon giorno')
